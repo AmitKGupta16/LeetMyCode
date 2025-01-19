@@ -4,11 +4,11 @@ class Solution {
         int start = 0,end = A.length()-1;
 
         while(start < end) {
-            if(!Character.isDigit(A.charAt(start)) && !Character.isAlphabetic(A.charAt(start))) {
+            if(!Character.isLetterOrDigit(A.charAt(start))) {
                 start++;
                 continue;
             }
-            if(!Character.isDigit(A.charAt(end)) && !Character.isAlphabetic(A.charAt(end))) {
+            if(!Character.isLetterOrDigit(A.charAt(end))) {
                end--;
                continue;
             }
